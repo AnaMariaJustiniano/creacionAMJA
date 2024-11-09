@@ -1,0 +1,19 @@
+body{
+  text-align: center;
+  background-color: rgba(130, 245, 207, 0.906);
+}
+ul {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 20%;
+  color: rgb(85, 13, 228);
+  text-align: left;
+  
+}
+ol{
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: rgb(11, 11, 11);
+}
+
