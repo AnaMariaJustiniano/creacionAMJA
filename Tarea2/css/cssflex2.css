@@ -1,13 +1,13 @@
 .text-gallery {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   justify-content: center;
   gap: 50px;
 }
 .text-item {
   width: 300px;
   padding: 20px;
-  background-color: #f2f2f2;
+  background-color: lightpink;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -17,4 +17,7 @@
 }
 .text-item p {
   margin-bottom: 0;
+}
+p{
+  text-align: center;
 }

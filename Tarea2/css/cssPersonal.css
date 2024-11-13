@@ -8,6 +8,7 @@ ul {
   width: 20%;
   color: rgb(85, 13, 228);
   text-align: left;
+  margin-left: 5px;
   
 }
 ol{
@@ -15,5 +16,14 @@ ol{
   text-align: left;
   border-bottom: 1px solid #ddd;
   color: rgb(11, 11, 11);
+  margin-left: 30px;
+ 
+H2{
+  font-style: italic;
+  font-weight: bold;
+  color: red;
+}
+li{
+  background-color: beige;
 }
 

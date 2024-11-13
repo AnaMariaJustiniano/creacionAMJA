@@ -1,7 +1,7 @@
 table {
   font-family: Arial, sans-serif;
-  border-collapse: collapse;
   width: 100%;
+  border: 1px;
 }
 th, td {
   padding: 12px;
@@ -9,8 +9,10 @@ th, td {
   border-bottom: 1px solid #ddd;
 }
 th {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #4444cb;
+  color: red;
+  text-align: center;
+  
 }
 tr:nth-child(even) {
   background-color: #f2f2f2;
