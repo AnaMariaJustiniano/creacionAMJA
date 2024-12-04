@@ -1,0 +1,183 @@
+ 
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilo del encabezado */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #060505;
+    padding: 10;
+    height: 5%;
+    margin:1rem 0;
+    width: 100%;
+    
+}
+
+
+.title {
+    font-size: 2rem;
+    margin: 0;
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0% { color: #ff6347; }
+    25% { color: #6a5acd; }
+    50% { color: #3cb371; }
+    75% { color: #ffa500; }
+    100% { color: #ff6347; }
+}
+
+/* Estilos del menú */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 50;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu a {
+    color: #f8f5f5;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s, font-family 0.3s;
+}
+
+.menu a:hover {
+    color: #ff6347;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Estilos de la galería */
+/*.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); Columnas de al menos 200px, se ajustan automáticamente */
+    gap: 20px; Espacio entre elementos 
+    justify-content: center;
+    height: calc(100vh - 60px); /* Ajusta la altura según tu footer 
+  flex-wrap: wrap;
+    margin: 1rem;
+}*/
+.logo {
+   flex-shrink: 0;
+   
+}
+nav{
+    margin-left: 20px; /*añade un espacio entre el logo y el mnenú*/
+}
+
+.image-container {
+    margin: 1rem;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.caption {
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    padding: 0.5rem 1;
+    background-color: #fff;
+    border-radius: 10px 10px 10px 10px;
+    margin: 1;
+    font-weight: bold;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fdf9f9;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    height: 5%;
+    bottom: 0;
+}
+
+.footer-text {
+    transition: color 0.3s, font-family 0.3s;
+}
+
+.footer-text:hover {
+    color: #ff6347;
+    font-family: 'Courier New', Courier, monospace;
+}
+.oculto {
+    display: none;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+  justify-content: center;
+
+
+  /*height: calc(100vh - 60px); /* Ajusta la altura según tu footer */
+}
+
+
+.detalles-producto {
+  order: 2;
+  flex-grow: 1;
+  overflow-y: auto; /* Si el contenido es muy largo */
+  justify-content: center;
+  
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.carrito {
+    /* Estilos para el botón */
+    background-color: #1049b3; /* Verde */
+    color: white;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+  }
+
